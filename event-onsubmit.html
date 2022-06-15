@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilo2.css">
+</head>
+<body>
+    
+    
+
+    <div class="container">
+        <h1>Formulario</h1>
+
+        <form action="" id="my_form">
+            <input type="text" name="name" id="name" placeholder="Informe seu nome">
+            <br>
+            <br>
+            <input type="text" name="sobrenome" id="sobrenome" placeholder="Informe seu sobrenome">
+            <br>
+            <br>
+            <input type="email" name="email" id="email" placeholder="E-mail">
+            <br>
+            <br>
+            <input type="password" id="password" placeholder="Senha">
+            <br>
+            <br>
+            <input type="password" id="csenha" placeholder="Confirmar senha">
+            <br>
+            <br>
+            <input type="submit" id="submit" value="cadastrar">
+
+        </form>
+
+    </div>
+
+    <script>
+
+        
+
+        document.getElementById("my_form").addEventListener("submit", submitForm)
+
+        function submitForm(){
+            let nome = document.getElementById("name").value;
+            let sobrenome = document.getElementById("sobrenome").value;
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+            let csenha = document.getElementById("csenha").value;
+
+            if(!email, !sobrenome,!nome,!password,!csenha){
+                return alert("Preencha todos os campos!");
+            }
+
+            if(password != csenha){
+                alert("Senhas não conferem!")
+            }else{
+                return alert(`Dados cadastrado com sucesso.`)
+            }
+
+              
+               
+}
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

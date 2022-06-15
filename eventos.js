@@ -38,3 +38,19 @@ function selecionarArtistas(){
     
 }
 
+//EVENTO MOUSEOVER (Altera o background de uma div)
+document.getElementById("minha_div").addEventListener("mouseover", mouseEmCima)
+
+document.getElementById("minha_div").addEventListener("mouseout", mouseFora)
+
+function mouseEmCima(){
+    document.getElementById("minha_div").style.background = 'red'
+    document.getElementById("minha_div").style.fontSize="20px"
+}
+
+function mouseFora(){
+    document.getElementById("minha_div").style.background ='aqua'
+    
+}
+//EVENTO MOUSEOVER
+
