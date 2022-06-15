@@ -1,0 +1,35 @@
+body{
+    background-color: aqua;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#currentNumber{
+    font-size: 25px;
+    padding: 10px;
+    
+    
+    
+}
+
+button{
+   border-radius: 5px;
+   border: none;
+   cursor: pointer;
+    
+    
+
+}
+
+button:hover{
+    background-color:rosybrown;
+    transition:2s;
+}
+
+#evento{
+    text-align: center;
+}
